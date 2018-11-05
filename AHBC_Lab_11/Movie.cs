@@ -5,7 +5,21 @@ namespace AHBC_Lab_11
 {
     class Movie
     {
-
+        // James - so I see you are handling lists just fine, adding items and 
+        // printing out the values for the list but I'm afraid you are missing the main 
+        // reasons we use classes for encapsulating data.  so what we are looking for   
+        // is making a movie class that contains the data associated with movie. 
+        // so you could make make a Movie class that looks kind of like this
+        // 
+        //  public class Movie 
+        // {
+        //      public string Name { get; set; }
+        //      public string Genre {get; set; }
+        // }
+        //
+        // so then we would have a class of movie that will and can 
+        // make a movie Object, we can then store a 
+        // list of movie Objects in well.. a list.
         public static void HorrorList()
         {
 
@@ -21,6 +35,8 @@ namespace AHBC_Lab_11
             Console.ReadLine();
         }
 
+        // James - I still like that you have a method for getting each list based on each genre,
+        // I would still like to see a Movie class though.
         public static void AnimatedList()
         {
 
