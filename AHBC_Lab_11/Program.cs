@@ -5,11 +5,13 @@ using System.Threading.Tasks;
 
 namespace AHBC_Lab_11
 {
+    // James - I see you are inhereting from the Movie class to get access to all of those 
+    // movie methods.  to be honest, I like that you are expirementing with inheritence, good stuff.
     class Program : Movie
     {
         static void Main(string[] args)
         {
-
+            // James - I like that you seperating your work into seperate methods, nice job!
             Console.WriteLine("Welcome to the Movie List Application");
             Console.WriteLine("There are 12 movies in this list");
             WillContinue();
@@ -57,6 +59,8 @@ namespace AHBC_Lab_11
 
             while (true)
             {
+                // James - I like this logic, run the WhichCategory and then the work inside of this method will determine if we run
+                // the WhichCategory() method again.  good stuff!
                 WhichCategory();
 
                 Console.Write("Continue? (y/n): ");
@@ -76,7 +80,8 @@ namespace AHBC_Lab_11
                 {
                     Console.WriteLine("Y or N not selected, please try again");
                     Console.ReadLine();
-
+                    // James - so the user will run the app again if they choose the wrong
+                    // category, just a heads up.
                     continue;
 
                 }
